@@ -1,145 +1,146 @@
-# Next.js User Dashboard
+# 🚀 Next.js User Dashboard
 
-A modern and responsive user dashboard built with Next.js 14, featuring user management, theme switching, and real-time form validation.
+A modern, responsive **User Management Dashboard** built with **Next.js 14** and **TypeScript**, featuring multi-step user forms, theme switching, and real-time validation.
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
 ![React](https://img.shields.io/badge/React-18-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-06B6D4)
 
+---
+
 ## 👨‍💻 Developer
-Built with ❤️ by Ritin Gusain
+
+Built with ❤️ by **Ritin Gusain**
+
+---
 
 ## ✨ Features
 
-### Core Features
-- 📊 User management with CRUD operations
-- 🌓 Dark/Light theme with system preference detection
-- 📱 Fully responsive design
-- 💾 Data persistence using localStorage
-- ✅ Form validation with real-time feedback
-- ⚡ Fast loading states and error handling
+### ✅ Core Features
+- 📋 User listing with filtering (name/city)
+- ➕ Add new users with multi-step form
+- 🔁 Back and next form navigation
+- ✅ Real-time form validation
+- 💡 Light/Dark theme toggle with system preference
+- 💾 Data persistence with `localStorage`
+- ⚠️ Loading and error states
 
-### Technical Features
-- Server-side and client-side rendering optimization
-- Context-based state management
-- TypeScript for type safety
-- Tailwind CSS for styling
-- Framer Motion for smooth animations
+### ⚙️ Technical Highlights
+- SSR + Client rendering optimization
+- Type-safe with TypeScript & Zod
+- State management using React Context API
+- Animations with Framer Motion
+- Clean UI with Tailwind CSS
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js 14
-- **Language:** TypeScript
-- **Styling:** TailwindCSS
-- **Animation:** Framer Motion
-- **State Management:** React Context
-- **Form Handling:** React Hook Form
-- **Data Fetching:** JSONPlaceholder API
-- **Validation:** Zod
+| Category | Tools |
+|----------|-------|
+| **Framework** | Next.js 14 |
+| **Language** | TypeScript |
+| **Styling** | TailwindCSS |
+| **Forms** | React Hook Form + Zod |
+| **State** | React Context API |
+| **Animation** | Framer Motion |
+| **API** | JSONPlaceholder |
+| **Validation** | Zod |
+
+---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js 18 or later
+### 🔧 Prerequisites
+- Node.js v18 or later
 - npm or yarn
 
-### Installation
+### 📦 Installation
 
-1. Clone the repository
 ```bash
 git clone https://github.com/ritingusain/user-dashboard.git
 cd user-dashboard
-```
+npm install     # or yarn install
+npm run dev     # or yarn dev
+Open http://localhost:3000 in your browser to view it live.
 
-2. Install dependencies
-```bash
-npm install
-# or
-yarn install
-```
-
-3. Start the development server
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## 📁 Project Structure
-
-```
+📁 Project Structure
+pgsql
+Copy
+Edit
 src/
 ├── app/                  # Next.js app directory
-│   ├── components/      # Reusable UI components
-│   │   ├── ThemeToggle.tsx
-│   │   └── Toast.tsx
-│   ├── context/        # React Context providers
-│   │   ├── ThemeContext.tsx
-│   │   └── UserContext.tsx
-│   ├── dashboard/      # Dashboard pages
-│   │   ├── add/       # Add user form
-│   │   ├── error.tsx  # Error handling
-│   │   ├── loading.tsx # Loading states
-│   │   └── page.tsx   # Main dashboard
-│   └── providers.tsx   # Context providers wrapper
-├── styles/             # Global styles
-└── types/             # TypeScript type definitions
-```
+│   ├── dashboard/        # Dashboard routes & pages
+│   │   ├── add/          # Multi-step add form
+│   │   ├── loading.tsx   # Loading fallback
+│   │   ├── error.tsx     # Error fallback
+│   │   └── page.tsx      # User list
+│   ├── components/       # Reusable components
+│   ├── context/          # Context Providers (Theme, User)
+│   └── providers.tsx     # Wrapper for context usage
+├── styles/               # Global styles
+├── types/                # TypeScript types
+🎯 Key Functionalities
+👥 User Management
+View users from a public API
 
-## 🎯 Key Features Explained
+Add new users via a clean multi-step form
 
-### User Management
-- View all users in a responsive table
-- Add new users through a multi-step form
-- Delete existing users
-- Search users by name or city
+Search/filter users by name or city
 
-### Theme System
-- Light and dark mode support
-- System preference detection
-- Theme persistence across sessions
-- Smooth theme transitions
+🌓 Theme System
+Toggle light/dark mode
 
-### Form Validation
-- Real-time field validation
-- Custom validation rules
-- Error messages with clear feedback
-- Multi-step form with progress saving
+Detect system preference
 
-## 🔧 Configuration
+Persist theme between sessions
 
-The project uses several configuration files:
-- `next.config.js` - Next.js configuration
-- `tailwind.config.js` - TailwindCSS theme and plugins
-- `tsconfig.json` - TypeScript configuration
-- `package.json` - Project dependencies and scripts
+🧾 Form & Validation
+Multi-step form with progress saving
 
-## 📱 Responsive Design
+Real-time validation
 
-The dashboard is fully responsive and works across:
-- Desktop monitors
-- Laptops
-- Tablets
-- Mobile devices
+Friendly error messages
 
-## 🤝 Contributing
+Submit logs complete user data to console
 
-Contributions are welcome! Feel free to:
-1. Fork the repository
-2. Create a new branch
-3. Make your changes
-4. Submit a pull request
+🔧 Configuration
+next.config.js – Next.js config
 
-## 📝 License
+tailwind.config.js – Tailwind theme
 
-This project is open source and available under the MIT License.
+tsconfig.json – TypeScript settings
 
-## 📞 Contact
+package.json – Scripts & dependencies
 
-Ritin Gusain - [gauravgusain86@gmail.com](mailto:gauravgusain86@gmail.com)
+📱 Responsive Design
+Tested on:
 
-Project Link: [https://github.com/ritingusain/user-dashboard](https://github.com/ritingusain/user-dashboard)
+✅ Desktop
 
+✅ Laptops
+
+✅ Tablets
+
+✅ Mobile devices
+
+🤝 Contributing
+Pull requests are welcome!
+
+Fork this repo
+
+Create a branch
+
+Make your changes
+
+Open a PR
+
+📝 License
+Licensed under the MIT License.
+
+📞 Contact
+Ritin Gusain
+📧 gauravgusain86@gmail.com
+🔗 GitHub Repo
+🌐 Live Site
