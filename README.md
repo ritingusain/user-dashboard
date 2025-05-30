@@ -57,13 +57,13 @@ Built with ❤️ by **Ritin Gusain**
 - npm or yarn
 
 ### 📦 Installation
-
 ```bash
 git clone https://github.com/ritingusain/user-dashboard.git
 cd user-dashboard
 npm install     # or yarn install
 npm run dev     # or yarn dev
 Open http://localhost:3000 in your browser to view it live.
+```
 
 📁 Project Structure
 pgsql
